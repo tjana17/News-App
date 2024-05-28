@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoriesCell" id="gTV-IL-0wX" customClass="CategoriesCollectionCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="174" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="174" height="100"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qeD-9k-dB6">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="100"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sports" translatesAutoresizingMaskIntoConstraints="NO" id="p1r-6A-eYT">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="100"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zOz-8i-fGX">
+                                <rect key="frame" x="10" y="66" width="154" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="p1r-6A-eYT" secondAttribute="bottom" id="7s4-uE-ywd"/>
+                            <constraint firstItem="p1r-6A-eYT" firstAttribute="top" secondItem="qeD-9k-dB6" secondAttribute="top" id="Ddb-kt-i5Z"/>
+                            <constraint firstAttribute="trailing" secondItem="zOz-8i-fGX" secondAttribute="trailing" constant="10" id="Hm2-61-M0l"/>
+                            <constraint firstItem="p1r-6A-eYT" firstAttribute="leading" secondItem="qeD-9k-dB6" secondAttribute="leading" id="WTH-m8-D88"/>
+                            <constraint firstItem="zOz-8i-fGX" firstAttribute="leading" secondItem="qeD-9k-dB6" secondAttribute="leading" constant="10" id="boJ-an-iSU"/>
+                            <constraint firstAttribute="trailing" secondItem="p1r-6A-eYT" secondAttribute="trailing" id="cu8-Og-lnU"/>
+                            <constraint firstAttribute="bottom" secondItem="zOz-8i-fGX" secondAttribute="bottom" constant="10" id="oQh-Og-FHy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qeD-9k-dB6" secondAttribute="bottom" id="0fb-6D-5R6"/>
+                <constraint firstAttribute="trailing" secondItem="qeD-9k-dB6" secondAttribute="trailing" id="1Ot-NT-TCl"/>
+                <constraint firstItem="qeD-9k-dB6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8Sz-BB-f77"/>
+                <constraint firstItem="qeD-9k-dB6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ytf-3s-wGm"/>
+            </constraints>
+            <size key="customSize" width="174" height="100"/>
+            <connections>
+                <outlet property="imageView" destination="p1r-6A-eYT" id="OEv-HG-BYq"/>
+                <outlet property="titleLbl" destination="zOz-8i-fGX" id="n52-7d-bxr"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="37.323943661971832"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sports" width="2250" height="1500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

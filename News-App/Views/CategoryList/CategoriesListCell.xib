@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoriesListCell" rowHeight="353" id="KGk-i7-Jjw" customClass="CategoriesListCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="353"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBJ-rD-XwE">
+                        <rect key="frame" x="8" y="8" width="304" height="300"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="Md3-RI-sRr">
+                                <rect key="frame" x="8" y="8" width="288" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fVE-ty-O1D"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HDL-Ca-sQL">
+                                <rect key="frame" x="16" y="216" width="218" height="76"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25 May 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOJ-tw-zbw">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="PG1-oG-XEM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Adani Enterprises Erases All Losses Since Short-Seller's Attack - NDTV" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-di-Unq">
+                                        <rect key="frame" x="0.0" y="22" width="218" height="54"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="1zX-h5-KbW"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHE-zz-Ztn">
+                                <rect key="frame" x="246" y="218" width="50" height="50"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LrZ-Im-WiR">
+                                        <rect key="frame" x="12.666666666666686" y="15.666666666666654" width="25" height="19.333333333333339"/>
+                                        <color key="tintColor" red="0.086274509799999996" green="0.086274509799999996" blue="0.1058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="9my-0N-wyP"/>
+                                            <constraint firstAttribute="height" constant="25" id="SU0-66-3Gq"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81568627450980391" green="0.85490196078431369" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="6Gv-le-XCu"/>
+                                    <constraint firstItem="LrZ-Im-WiR" firstAttribute="centerY" secondItem="ZHE-zz-Ztn" secondAttribute="centerY" id="BGG-6M-k1q"/>
+                                    <constraint firstItem="LrZ-Im-WiR" firstAttribute="centerX" secondItem="ZHE-zz-Ztn" secondAttribute="centerX" id="Dr0-3z-AL3"/>
+                                    <constraint firstAttribute="width" constant="50" id="aU2-5f-ar5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Md3-RI-sRr" secondAttribute="trailing" constant="8" id="1RZ-Oa-m2a"/>
+                            <constraint firstItem="Md3-RI-sRr" firstAttribute="top" secondItem="wBJ-rD-XwE" secondAttribute="top" constant="8" id="4gi-7D-6Ds"/>
+                            <constraint firstItem="ZHE-zz-Ztn" firstAttribute="top" secondItem="Md3-RI-sRr" secondAttribute="bottom" constant="10" id="GLF-BR-pbC"/>
+                            <constraint firstItem="HDL-Ca-sQL" firstAttribute="leading" secondItem="wBJ-rD-XwE" secondAttribute="leading" constant="16" id="TbX-CK-XbW"/>
+                            <constraint firstAttribute="trailing" secondItem="ZHE-zz-Ztn" secondAttribute="trailing" constant="8" id="UFY-eu-1j5"/>
+                            <constraint firstItem="HDL-Ca-sQL" firstAttribute="top" secondItem="Md3-RI-sRr" secondAttribute="bottom" constant="8" id="WEz-8i-VwY"/>
+                            <constraint firstAttribute="bottom" secondItem="HDL-Ca-sQL" secondAttribute="bottom" constant="8" id="apW-hw-6te"/>
+                            <constraint firstItem="Md3-RI-sRr" firstAttribute="leading" secondItem="wBJ-rD-XwE" secondAttribute="leading" constant="8" id="iLg-nF-jFJ"/>
+                            <constraint firstAttribute="bottom" secondItem="ZHE-zz-Ztn" secondAttribute="bottom" constant="15" id="oc4-r2-9X5"/>
+                            <constraint firstItem="ZHE-zz-Ztn" firstAttribute="leading" secondItem="HDL-Ca-sQL" secondAttribute="trailing" constant="12" id="ttS-XL-mqI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="wBJ-rD-XwE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="EuT-iM-CJp"/>
+                    <constraint firstItem="wBJ-rD-XwE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TYp-Uj-Vjp"/>
+                    <constraint firstAttribute="bottom" secondItem="wBJ-rD-XwE" secondAttribute="bottom" constant="8" id="Vcg-dP-Dty"/>
+                    <constraint firstAttribute="trailing" secondItem="wBJ-rD-XwE" secondAttribute="trailing" constant="8" id="xxH-wX-DJ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="actionView" destination="ZHE-zz-Ztn" id="PkZ-4R-iRj"/>
+                <outlet property="bgView" destination="wBJ-rD-XwE" id="XqV-OD-XJ6"/>
+                <outlet property="dateLbl" destination="pOJ-tw-zbw" id="Ek9-EW-Af7"/>
+                <outlet property="newsImage" destination="Md3-RI-sRr" id="uf5-uL-ZGF"/>
+                <outlet property="titleLbl" destination="OZG-di-Unq" id="ogS-ks-SxI"/>
+            </connections>
+            <point key="canvasLocation" x="-9.1603053435114496" y="128.52112676056339"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow.right" catalog="system" width="128" height="95"/>
+        <image name="placeholder" width="1200" height="800"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

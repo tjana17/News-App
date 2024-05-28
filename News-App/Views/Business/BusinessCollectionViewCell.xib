@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="businessCollectionCell" id="gTV-IL-0wX" customClass="BusinessCollectionViewCell" customModule="News_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="211"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="211"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="7k2-Gv-FRC">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="211"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="591-wp-Bw9">
+                        <rect key="frame" x="16" y="177" width="160" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7k2-Gv-FRC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HDt-lZ-800"/>
+                <constraint firstAttribute="trailing" secondItem="7k2-Gv-FRC" secondAttribute="trailing" id="NcM-iG-E6w"/>
+                <constraint firstAttribute="bottom" secondItem="591-wp-Bw9" secondAttribute="bottom" constant="16" id="Ni3-bA-jfN"/>
+                <constraint firstItem="591-wp-Bw9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="16" id="cNn-ES-lnV"/>
+                <constraint firstItem="7k2-Gv-FRC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cmB-Dy-Zbd"/>
+                <constraint firstAttribute="trailing" secondItem="591-wp-Bw9" secondAttribute="trailing" constant="16" id="fs5-Yh-pAK"/>
+                <constraint firstAttribute="bottom" secondItem="7k2-Gv-FRC" secondAttribute="bottom" id="xYG-68-fcZ"/>
+            </constraints>
+            <size key="customSize" width="192" height="211"/>
+            <connections>
+                <outlet property="imageView" destination="7k2-Gv-FRC" id="3Db-dz-NuV"/>
+                <outlet property="titleLbl" destination="591-wp-Bw9" id="eoN-gk-6C8"/>
+            </connections>
+            <point key="canvasLocation" x="99.236641221374043" y="76.408450704225359"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="1200" height="800"/>
+    </resources>
+</document>

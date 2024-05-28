@@ -2,7 +2,7 @@
 //  News_AppUITests.swift
 //  News-AppUITests
 //
-//  Created by DB-MBP-023 on 25/05/24.
+//  Created by Janarthanan Kannan on 25/05/24.
 //
 
 import XCTest
